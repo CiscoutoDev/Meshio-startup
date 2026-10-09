@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101412" />
+    <meta name="description" content="Continue conectado mesmo sem internet. Uma rede local entre celulares para mensagens, grupos e avisos importantes." />
+
+    <title>Meshio — Conectividade offline</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="nav-wrap">
+        <nav class="container">
+            <a class="brand" href="#inicio" aria-label="Meshio, início">
+                <span class="brand-mark">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8.5 15.5 6 18a4 4 0 0 1-5.7-5.7l4-4A4 4 0 0 1 10 8"/>
+                        <path d="m15.5 8.5 2.5-2.5a4 4 0 0 1 5.7 5.7l-4 4A4 4 0 0 1 14 16"/>
+                        <path d="m8 12 8 0"/>
+                    </svg>
+                </span>
+
+                meshio<span style="color:var(--green)">.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#solucao">A solução</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#para-quem">Para quem</a>
+            </div>
+
+            <a class="nav-cta" href="#conheca">
+                Conheça o projeto <span aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow">
+                        <span class="pulse"></span>
+                        Comunicação além do sinal
+                    </div>
+
+                    <h1>
+                        Sem internet.<br>
+                        <span>Sem ficar</span><br>
+                        desconectado.
+                    </h1>
+
+                    <p class="hero-copy">
+                        Uma forma mais inteligente de manter as pessoas em contato. O Meshio conecta celulares próximos para trocar mensagens e avisos importantes — mesmo quando a internet não está disponível.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn" href="#solucao">
+                            Descubra como funciona <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a class="btn secondary" href="#como-funciona">
+                            Explorar recursos
+                        </a>
+                    </div>
+
+                    <div class="micro-note">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+
+                        Feito para aproximar pessoas, mesmo em áreas sem cobertura.
+                    </div>
+                </div>
+
+                <div class="visual" aria-label="Ilustração de celulares conectados em uma rede local">
+                    <div class="orbit"></div>
+
+                    <svg class="network-line" viewBox="0 0 350 300" fill="none" aria-hidden="true">
+                        <path d="M65 60 175 145 290 70M65 60 75 245 175 145 270 245 290 70M75 245 270 245" stroke="#a6f36a" stroke-opacity=".35" stroke-width="1.3" stroke-dasharray="4 7"/>
+                        <circle cx="175" cy="145" r="7" fill="#a6f36a" fill-opacity=".5"/>
+                        <circle cx="175" cy="145" r="18" stroke="#a6f36a" stroke-opacity=".22"/>
+                    </svg>
+
+                    <div class="node n1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="6" y="2" width="12" height="20" rx="2"/>
+                            <path d="M10 18h4"/>
+                        </svg>
+                    </div>
+
+                    <div class="node n2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M5 9a11 11 0 0 1 14 0M8 12a6.5 6.5 0 0 1 8 0M11 15a2 2 0 0 1 2 0"/>
+                            <path d="M12 19h.01"/>
+                        </svg>
+                    </div>
+
+                    <div class="node n3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="node n4">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+
+                    <div class="float-label label-one">
+                        <strong>Rede local ativa</strong>
+                        <small>Dispositivos próximos</small>
+                    </div>
+
+                    <div class="float-label label-two">
+                        <strong>Sem internet</strong>
+                        <small>Comunicação direta</small>
+                    </div>
+
+                    <div class="phone">
+                        <div class="phone-screen">
+                            <div class="phone-top">
+                                <span>9:41</span>
+                                <span>● ● ▰</span>
+                            </div>
+
+                            <div class="phone-heading">Seu grupo</div>
+                            <div class="phone-sub">Excursão • 8 dispositivos próximos</div>
+
+                            <div class="connected">
+                                <span class="pulse"></span>
+                                Rede local conectada
+                            </div>
+
+                            <div class="message">
+                                Pessoal, todo mundo chegou ao ponto de encontro?
+                                <span class="time">14:21</span>
+                            </div>
+
+                            <div class="message mine">
+                                Cheguei! Estou perto da entrada.
+                                <span class="time">14:21 ✓</span>
+                            </div>
+
+                            <div class="message">
+                                Estou a caminho. Já avisei o restante do grupo.
+                                <span class="time">14:22</span>
+                            </div>
+
+                            <div class="message mine">
+                                Perfeito, esperamos aqui.
+                                <span class="time">14:22 ✓</span>
+                            </div>
+
+                            <div class="phone-bottom">
+                                <span>Escreva uma mensagem...</span>
+                                <span>↑</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="trust-strip">
+            <div class="container trust-inner">
+                <div class="trust-intro">
+                    Tecnologia pensada para situações reais
+                </div>
+
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M5 9a11 11 0 0 1 14 0M8 12a6.5 6.5 0 0 1 8 0M11 15a2 2 0 0 1 2 0"/>
+                        <path d="M12 19h.01"/>
+                    </svg>
+                    Bluetooth + Wi-Fi Direct
+                </div>
+
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>
+                    </svg>
+                    Rede mesh
+                </div>
+
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="5" y="2" width="14" height="20" rx="2"/>
+                        <path d="M9 18h6"/>
+                    </svg>
+                    Celular como ponto de conexão
+                </div>
+            </div>
+        </div>
+
+        <section id="solucao">
+            <div class="container problem-grid">
+                <div>
+                    <div class="section-kicker">O problema é real</div>
+
+                    <h2>
+                        Quando o sinal some, a comunicação não deveria parar.
+                    </h2>
+
+                    <p class="section-lead">
+                        Em eventos lotados, excursões, regiões rurais ou bairros com cobertura limitada, ficar sem internet pode dificultar a organização e o contato entre pessoas.
+                    </p>
+
+                    <div class="pain-list">
+                        <div class="pain">
+                            <span class="pain-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 6 6 18M6 6l12 12"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Sem cobertura confiável</strong><br>
+                                <small>Nem todo lugar tem sinal estável quando você precisa.</small>
+                            </span>
+                        </div>
+
+                        <div class="pain">
+                            <span class="pain-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 9v4m0 4h.01"/>
+                                    <path d="M10.3 3.9 2.6 17.2A2 2 0 0 0 4.3 20h15.4a2 2 0 0 0 1.7-2.8L13.7 3.9a2 2 0 0 0-3.4 0Z"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Avisos que não chegam</strong><br>
+                                <small>Mensagens importantes podem ficar sem ser entregues.</small>
+                            </span>
+                        </div>
+
+                        <div class="pain">
+                            <span class="pain-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Momentos em que cada minuto importa</strong><br>
+                                <small>Coordenar grupos fica mais difícil sem uma alternativa de comunicação.</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-art">
+                    <div class="signal-art">
+                        <div class="signal-ring r3"></div>
+                        <div class="signal-ring r2"></div>
+                        <div class="signal-ring"></div>
+
+                        <div class="center">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                                <path d="M9 6h6M10 18h4"/>
+                            </svg>
+                        </div>
+
+                        <div class="signal-break"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="recursos">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-kicker">Uma nova forma de se conectar</div>
+
+                    <h2>Uma rede feita pelas pessoas.</h2>
+
+                    <p class="section-lead">
+                        O conceito transforma celulares próximos em pontos de uma rede local, para que mensagens e avisos possam circular sem depender de uma conexão tradicional com a internet.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M7 7 17 17 12 22V2l5 5L7 17"/>
+                            </svg>
+                        </div>
+
+                        <h3>Conexão entre celulares</h3>
+                        <p>Utiliza Bluetooth e Wi-Fi Direct para criar conexões locais entre dispositivos próximos.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <circle cx="5" cy="12" r="2.5"/>
+                                <circle cx="19" cy="5" r="2.5"/>
+                                <circle cx="19" cy="19" r="2.5"/>
+                                <path d="m7.3 10.9 9.4-4.8M7.3 13.1l9.4 4.8"/>
+                            </svg>
+                        </div>
+
+                        <h3>Rede mesh</h3>
+                        <p>As mensagens podem passar de um dispositivo a outro para alcançar pessoas conectadas à rede local.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/>
+                            </svg>
+                        </div>
+
+                        <h3>Chat em grupo</h3>
+                        <p>Converse com a turma, amigos ou equipe sem precisar de dados móveis ou Wi-Fi com internet.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                                <path d="M12 8v4m0 4h.01"/>
+                            </svg>
+                        </div>
+
+                        <h3>Avisos e emergências</h3>
+                        <p>Modo broadcast para compartilhar avisos de turma, orientações e mensagens importantes.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                                <path d="M8 10h8M8 14h5"/>
+                            </svg>
+                        </div>
+
+                        <h3>Mensagens guardadas</h3>
+                        <p>As mensagens podem ficar armazenadas até que o destinatário volte ao alcance da rede.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M3 12h18M12 3v18"/>
+                                <circle cx="12" cy="12" r="9"/>
+                            </svg>
+                        </div>
+
+                        <h3>Expansão com LoRa</h3>
+                        <p>O projeto prevê integração opcional com LoRa para ampliar o alcance, dependendo do hardware e das condições de uso.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona">
+            <div class="container how-grid">
+                <div>
+                    <div class="section-kicker">Simples na ideia</div>
+
+                    <h2>Como a conexão acontece?</h2>
+
+                    <p class="section-lead">
+                        Em vez de enviar tudo para um servidor na internet, a proposta é fazer a comunicação circular localmente entre os aparelhos compatíveis.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-num">01</div>
+
+                            <div>
+                                <h3>Os celulares se encontram</h3>
+                                <p>Dispositivos próximos descobrem uma forma de conexão local por Bluetooth ou Wi-Fi Direct.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-num">02</div>
+
+                            <div>
+                                <h3>A rede se forma</h3>
+                                <p>Os aparelhos participantes funcionam como pontos de uma rede mesh, conforme a implementação.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-num">03</div>
+
+                            <div>
+                                <h3>As mensagens circulam</h3>
+                                <p>Textos e avisos podem ser encaminhados entre dispositivos dentro do alcance da rede.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-num">04</div>
+
+                            <div>
+                                <h3>A comunicação continua</h3>
+                                <p>Sem internet tradicional, a rede local pode ajudar o grupo a manter contato enquanto houver dispositivos conectados e compatíveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="margin-top:45px">
+                <div class="network-card">
+                    <div class="network-title">
+                        <span>Visualização conceitual da rede</span>
+                        <span class="live-tag">● CONEXÕES LOCAIS</span>
+                    </div>
+
+                    <div class="mesh">
+                        <svg viewBox="0 0 700 255" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                            <path d="M70 75 330 35 620 85 220 220 485 225 620 85M70 75 485 225M330 35 220 220M330 35 620 85M220 220 620 85" stroke="#a6f36a" stroke-opacity=".42" stroke-width="1.5" stroke-dasharray="5 7"/>
+                            <circle cx="330" cy="35" r="27" stroke="#a6f36a" stroke-opacity=".12"/>
+                            <circle cx="220" cy="220" r="27" stroke="#a6f36a" stroke-opacity=".12"/>
+                        </svg>
+
+                        <div class="mesh-node m1">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                            </svg>
+                        </div>
+
+                        <div class="mesh-node m2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                                <path d="M10 18h4"/>
+                            </svg>
+                        </div>
+
+                        <div class="mesh-node m3">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                            </svg>
+                        </div>
+
+                        <div class="mesh-node m4">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                            </svg>
+                        </div>
+
+                        <div class="mesh-node m5">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="6" y="2" width="12" height="20" rx="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="audience" id="para-quem">
+            <div class="container">
+                <div class="section-kicker">Onde faz a diferença</div>
+
+                <h2>Conectividade para quem precisa.</h2>
+
+                <p class="section-lead">
+                    A ideia é atender pessoas e grupos que precisam se organizar mesmo quando a cobertura é limitada ou inexistente.
+                </p>
+
+                <div class="audience-grid">
+                    <article class="audience-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 10h.01M15 10h.01M9 14h.01M15 14h.01M10 21v-3h4v3"/>
+                        </svg>
+
+                        <h3>Escolas técnicas</h3>
+                        <p>Turmas, atividades escolares, excursões e comunicação entre estudantes.</p>
+                    </article>
+
+                    <article class="audience-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 20 9 4l6 16M6 13h6M15 20l3-8 3 8M2 20h20"/>
+                        </svg>
+
+                        <h3>Trilhas e camping</h3>
+                        <p>Grupos em ambientes afastados, onde o sinal pode ser instável ou não existir.</p>
+                    </article>
+
+                    <article class="audience-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 21h18M5 21V10l7-6 7 6v11M9 21v-6h6v6"/>
+                        </svg>
+
+                        <h3>Comunidades rurais</h3>
+                        <p>Uma alternativa local de comunicação em comunidades com cobertura limitada.</p>
+                    </article>
+
+                    <article class="audience-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v5l3 2M3.6 7h4M16.4 17h4"/>
+                        </svg>
+
+                        <h3>Eventos e turismo</h3>
+                        <p>Coordenação de grupos em locais lotados, festivais, passeios e eventos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" id="conheca">
+            <div class="container">
+                <div class="cta-box">
+                    <div>
+                        <div class="section-kicker" style="color:#294025">
+                            O próximo passo
+                        </div>
+
+                        <h2>Mais proximidade. Menos dependência do sinal.</h2>
+
+                        <p>
+                            Conheça a proposta do Meshio e acompanhe a evolução de uma solução pensada para manter as pessoas conectadas quando a internet falha.
+                        </p>
+                    </div>
+
+                    <form class="lead-form" id="lead-form">
+                        <label class="sr-only" for="lead-name">Seu nome</label>
+                        <input id="lead-name" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+
+                        <label class="sr-only" for="lead-instagram">Seu @ do Instagram</label>
+                        <input id="lead-instagram" name="instagram" type="text" placeholder="@seuinstagram" autocomplete="off" required pattern="@?[A-Za-z0-9._]{1,30}" title="Digite um @ válido do Instagram." />
+
+                        <button class="btn" type="submit">
+                            Quero acompanhar ↗
+                        </button>
+
+                        <p class="form-note">
+                            Ao enviar, você demonstra interesse no projeto. Configure um serviço de formulários para receber os contatos.
+                        </p>
+
+                        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <a class="brand" href="#inicio">
+                <span class="brand-mark">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8.5 15.5 6 18a4 4 0 0 1-5.7-5.7l4-4A4 4 0 0 1 10 8"/>
+                        <path d="m15.5 8.5 2.5-2.5a4 4 0 0 1 5.7 5.7l-4 4A4 4 0 0 1 14 16"/>
+                        <path d="m8 12 8 0"/>
+                    </svg>
+                </span>
+
+                meshio.
+            </a>
+
+            <span>Meshio — projeto conceitual de conectividade offline.</span>
+
+            <div class="footer-links">
+                <a href="#solucao">A solução</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#para-quem">Público</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const leadForm = document.getElementById("lead-form");
+        const feedback = document.getElementById("form-feedback");
+
+        leadForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("lead-name").value.trim();
+            let instagram = document.getElementById("lead-instagram").value.trim();
+
+            if (instagram && !instagram.startsWith("@")) {
+                instagram = "@" + instagram;
+            }
+
+            feedback.textContent = "Prévia validada para " + name + " (" + instagram + "). Para registrar os contatos, conecte este formulário a um serviço de formulários ou banco de dados.";
+
+            leadForm.classList.add("submitted");
+        });
+    </script>
+</body>
+</html>
